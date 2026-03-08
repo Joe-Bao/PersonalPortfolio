@@ -3,7 +3,8 @@ import { ArrowRight, Download } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export default function Hero() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const cvPdf = i18n.language.startsWith("zh") ? "/web_cn_cv.pdf" : "/web_en_cv.pdf";
 
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 md:px-16">
@@ -81,7 +82,10 @@ export default function Hero() {
             <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
           </a>
           <a
-            href="#contact"
+            href={cvPdf}
+            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="clip-path-slant flex items-center gap-3 border-2 border-dashed border-[var(--secondary)]/50 px-8 py-4 font-mono text-sm font-semibold tracking-wider text-[var(--secondary)] transition-all hover:bg-[var(--secondary)]/10"
           >
             <Download size={16} />
