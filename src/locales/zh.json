@@ -1,0 +1,127 @@
+{
+  "header": {
+    "about": "关于",
+    "skills": "技能",
+    "experience": "经历",
+    "projects": "项目",
+    "blog": "博客"
+  },
+  "hero": {
+    "status": "寻求 2026 软件开发全职机会",
+    "name": "包嘉禾",
+    "role": "软件开发工程师 / 开源维护者",
+    "tagline": "专注于构建高性能的自动化工具、云原生架构与现代 Web 体验。热衷于解决从底层硬件差异到前端状态管理的复杂工程挑战。",
+    "viewProjects": "查看项目",
+    "downloadCV": "下载简历",
+    "scroll": "下滑"
+  },
+  "about": {
+    "label": "关于我",
+    "title1": "致力于",
+    "title2": "解决真实的工程难题",
+    "p1": "我是一名软件开发工程师，目前在 UNSW 攻读信息技术硕士。我喜欢为复杂的工程问题设计优雅的解决方案，无论是设计声明式状态机、优化 OpenCV 图像识别，还是逆向排查历史遗留代码。",
+    "p2": "在代码之外，我是拥有万级活跃用户的开源项目 (MaaEnd) 的核心维护者。我坚信“约定优于配置”与“让系统去管理规范”，并喜欢在博客中复盘如性能毛刺、色彩空间差异等硬核技术踩坑故事。",
+    "location": "所在地",
+    "locationValue": "悉尼，澳大利亚",
+    "experience": "核心方向",
+    "experienceValue": "开源架构 / 前后端开发",
+    "education": "教育背景",
+    "educationValue": "UNSW IT硕士 / UQ 计科本科",
+    "terminalName": "包嘉禾",
+    "terminalRole": "软件开发工程师",
+    "terminalPassion": "编写可靠的系统与干净的代码",
+    "terminalStatus": "开放工作机会中 (485签证候选)"
+  },
+  "skills": {
+    "title": "技能",
+    "frontend": "前端开发",
+    "frontendSub": "Vue.js, React Native, HTML/CSS",
+    "backend": "后端开发",
+    "backendSub": "Django, REST API 设计",
+    "database": "数据库与云服务",
+    "databaseSub": "AWS DynamoDB, SQL, NoSQL",
+    "devops": "运维与 CI/CD",
+    "devopsSub": "GitHub Actions, Linux",
+    "languages": "编程语言",
+    "languagesSub": "C++, Python, JavaScript, Go",
+    "web": "计算机视觉",
+    "webSub": "OpenCV, 图像处理",
+    "design": "架构模式",
+    "designSub": "单表设计 (Single-Table), 声明式状态机",
+    "tools": "开发工具",
+    "toolsSub": "Git, VS Code, Vim"
+  },
+  "experience": {
+    "title": "经历",
+    "items": [
+      {
+        "title": "核心维护者 & 开发者",
+        "organization": "MaaEnd (开源自动化项目)",
+        "period": "2026.01 - 至今",
+        "description": "维护拥有 13 万+ 下载量与 1.7k+ Stars 的开源项目，并获项目所有者直接资金赞助。设计基于 JSON 与 Go 的声明式状态机流水线，结合 OpenCV 与 OCR 技术大幅提升了系统在不同显卡设备上的识别鲁棒性。"
+      },
+      {
+        "title": "信息技术硕士 (MIT)",
+        "organization": "新南威尔士大学 (UNSW)",
+        "period": "2025.06 - 2026.12 (预计)",
+        "description": "主修高级 C++ 编程 (90)、计算机网络 (89) 和数据库系统 (91) 等核心课程，均获得 High Distinction (HD) 成绩。"
+      },
+      {
+        "title": "前端开发工程师 (Contract)",
+        "organization": "华为 (苏州)",
+        "period": "2025.02 - 2025.06",
+        "description": "负责企业级路由器配置产品的前端模块开发 (Vue.js)。快速逆向工程并适应复杂的遗留系统架构，成功定位并修复多个高优先级渲染缺陷，确保了核心版本的发布。"
+      },
+      {
+        "title": "计算机科学学士 (BCS)",
+        "organization": "昆士兰大学 (UQ)",
+        "period": "2022.02 - 2024.11",
+        "description": "涵盖云计算、高性能计算、编译器与解释器、人工智能及软件工程流程等计算机科学核心领域。"
+      }
+    ]
+  },
+  "projects": {
+    "title": "项目",
+    "items": [
+      {
+        "title": "MaaEnd | 桌面端开源自动化引擎",
+        "description": "主打项目。基于计算机视觉与声明式状态机的自动化工具。通过混合 HSV 色彩匹配与 OCR 兜底策略，解决了不同 GPU 驱动导致的 RGB 偏移问题，保障了万级用户的稳定运行。"
+      },
+      {
+        "title": "Pantry Pal | 智能云原生食材管理",
+        "description": "基于 iOS 的全栈应用。前端采用 React Native 与 Context API；后端使用 Django 与 AWS DynamoDB，通过单表设计 (PK/SK) 与全局二级索引优化查询，并接入 AWS Textract 实现小票 OCR 自动录入。"
+      }
+    ]
+  },
+  "contact": {
+    "label": "联系我",
+    "title1": "期待与你",
+    "title2": "探讨技术与合作",
+    "description": "我目前正在寻找 2026 年底的全职软件开发岗位（目前可接受每两周 48 小时的兼职/实习）。无论你有技术难题想讨论，还是有合适的岗位机会，都欢迎随时与我联系！",
+    "cta": "发送邮件",
+    "hint": "或通过顶部导航栏的 LinkedIn/GitHub 找到我"
+  },
+  "footer": {
+    "marquee": "Joe Bao · Software Engineer",
+    "description": "用可靠的代码构建系统。Convention over Configuration.",
+    "navigation": "导航",
+    "connect": "联系方式",
+    "copyright": "Joe Bao. 保留所有权利。",
+    "builtWith": "使用 React + Tailwind CSS 构建"
+  },
+  "blog": {
+    "label": "技术博客",
+    "title": "复盘与思考",
+    "subtitle": "关于开源维护、踩坑实录 (Debugging)、性能优化以及我的工程价值观。",
+    "published": "已发布 {{count}} 篇文章",
+    "published_other": "已发布 {{count}} 篇文章",
+    "minRead": "{{count}} 分钟阅读",
+    "noPosts": "暂无文章。",
+    "backToAll": "返回所有文章",
+    "previous": "上一篇",
+    "next": "下一篇",
+    "viewAll": "查看全部",
+    "viewAllArticles": "查看所有文章",
+    "latestArticles": "最新文章"
+  }
+}

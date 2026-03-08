@@ -1,0 +1,360 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+/* ── Sci-Fi Industrial Palette ────────────────────────────────────── */
+
+:root {
+  --background: #f9f9f9;
+  --foreground: #111111;
+
+  --industrial-yellow: #d4a017;
+  --tech-cyan: #008fa6;
+  --technical-grey: #e2e2e2;
+
+  --primary: #d4a017;
+  --primary-foreground: #000000;
+  --secondary: #008fa6;
+  --secondary-foreground: #ffffff;
+  --accent: #c49102;
+  --accent-foreground: #000000;
+
+  --muted: #f4f4f4;
+  --muted-foreground: #71717a;
+  --border: #e2e2e2;
+  --border-subtle: rgba(0, 0, 0, 0.08);
+
+  --card: rgba(255, 255, 255, 0.8);
+  --card-foreground: #111111;
+
+  --text-primary: rgba(17, 17, 17, 1);
+  --text-secondary: rgba(17, 17, 17, 0.8);
+  --text-tertiary: rgba(17, 17, 17, 0.6);
+  --text-quaternary: rgba(17, 17, 17, 0.4);
+
+  color-scheme: light;
+}
+
+.dark {
+  --background: #050505;
+  --foreground: #ffffff;
+
+  --industrial-yellow: #ffd000;
+  --tech-cyan: #00f0ff;
+  --technical-grey: #27272a;
+
+  --primary: #ffd000;
+  --primary-foreground: #000000;
+  --secondary: #00f0ff;
+  --secondary-foreground: #000000;
+  --accent: #ffe600;
+  --accent-foreground: #000000;
+
+  --muted: #27272a;
+  --muted-foreground: #a1a1aa;
+  --border: rgba(255, 255, 255, 0.1);
+  --border-subtle: rgba(255, 255, 255, 0.05);
+
+  --card: rgba(255, 255, 255, 0.02);
+  --card-foreground: #ffffff;
+
+  --text-primary: rgba(255, 255, 255, 1);
+  --text-secondary: rgba(255, 255, 255, 0.8);
+  --text-tertiary: rgba(255, 255, 255, 0.6);
+  --text-quaternary: rgba(255, 255, 255, 0.4);
+
+  color-scheme: dark;
+}
+
+/* ── Base Styles ──────────────────────────────────────────────────── */
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "DM Sans", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-image:
+    radial-gradient(ellipse at 20% 20%, rgba(255, 208, 0, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 30%, rgba(0, 143, 166, 0.05) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 80%, rgba(255, 208, 0, 0.04) 0%, transparent 50%);
+}
+
+.dark body {
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(255, 208, 0, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 30%, rgba(0, 240, 255, 0.06) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 80%, rgba(255, 208, 0, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 50% 0%, #0a0a0c 0%, #050505 60%, #000000 100%);
+}
+
+@media (min-width: 1024px) {
+  body, .dark body {
+    background-attachment: fixed;
+  }
+}
+
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar { display: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+::selection {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+/* ── Utility Classes ──────────────────────────────────────────────── */
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+:root:not(.dark) .glass-panel {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--technical-grey);
+}
+
+.card-interactive {
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    0 4px 8px rgba(0, 0, 0, 0.04);
+}
+.dark .card-interactive {
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.2),
+    0 4px 8px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+.card-interactive:hover {
+  border-color: #c49102;
+  transform: translateY(-2px);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    0 4px 8px rgba(0, 0, 0, 0.06),
+    0 8px 16px rgba(0, 0, 0, 0.06),
+    0 0 0 1px rgba(196, 145, 2, 0.3),
+    0 0 12px rgba(196, 145, 2, 0.1);
+}
+.dark .card-interactive:hover {
+  border-color: rgba(255, 230, 0, 0.5);
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.3),
+    0 8px 16px rgba(0, 0, 0, 0.2),
+    0 0 40px rgba(255, 230, 0, 0.08);
+}
+
+.neon-border-yellow {
+  box-shadow: 0 0 10px var(--industrial-yellow), inset 0 0 5px var(--industrial-yellow);
+}
+
+.text-glow-yellow {
+  text-shadow: 0 0 15px rgba(255, 208, 0, 0.6);
+}
+:root:not(.dark) .text-glow-yellow {
+  text-shadow: 0 0 8px rgba(255, 208, 0, 0.3);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 15px rgba(0, 240, 255, 0.6);
+}
+:root:not(.dark) .text-glow-cyan {
+  text-shadow: 0 0 8px rgba(0, 143, 166, 0.3);
+}
+
+.cyber-gradient-text {
+  background: linear-gradient(to right, var(--industrial-yellow), var(--tech-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Footer marquee: avoid bright white midpoint in dark mode */
+.dark .footer-marquee-text.cyber-gradient-text {
+  background: linear-gradient(
+    to right,
+    rgba(255, 208, 0, 0.5),
+    rgba(255, 208, 0, 0.3) 30%,
+    rgba(0, 240, 255, 0.3) 70%,
+    rgba(0, 240, 255, 0.5)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stroke-text {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  color: transparent;
+}
+:root:not(.dark) .stroke-text {
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.15);
+}
+
+.dark .stroke-text.cyber-gradient-text {
+  -webkit-text-stroke: 1px rgba(255, 208, 0, 0.2);
+}
+
+.clip-path-slant {
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+
+.font-heading { font-family: "Space Grotesk", sans-serif; }
+.font-syne    { font-family: "Syne", sans-serif; }
+.font-mono    { font-family: "JetBrains Mono", monospace; }
+.font-body    { font-family: "DM Sans", sans-serif; }
+
+/* ── Blog Article Typography ─────────────────────────────────────── */
+
+.prose-custom {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.prose-custom h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--text-primary);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.prose-custom h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-custom p {
+  margin-bottom: 1.25rem;
+}
+
+.prose-custom a {
+  color: var(--secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+.prose-custom a:hover {
+  color: var(--primary);
+}
+
+.prose-custom strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.prose-custom ul,
+.prose-custom ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+.prose-custom ul { list-style-type: disc; }
+.prose-custom ol { list-style-type: decimal; }
+.prose-custom li {
+  margin-bottom: 0.4rem;
+}
+.prose-custom li::marker {
+  color: var(--primary);
+}
+
+.prose-custom blockquote {
+  border-left: 3px solid var(--primary);
+  padding: 0.75rem 1.25rem;
+  margin: 1.5rem 0;
+  background: var(--card);
+  border-radius: 0 0.5rem 0.5rem 0;
+  font-style: italic;
+  color: var(--text-tertiary);
+}
+
+.prose-custom code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.85em;
+  background: rgba(0, 0, 0, 0.06);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+}
+.dark .prose-custom code {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.prose-custom pre {
+  background: #1a1a2e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+:root:not(.dark) .prose-custom pre {
+  background: #f5f5f5;
+  border-color: var(--border);
+}
+
+.prose-custom pre code {
+  background: none;
+  padding: 0;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #e2e8f0;
+}
+:root:not(.dark) .prose-custom pre code {
+  color: #1e293b;
+}
+
+.prose-custom table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+.prose-custom th {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 2px solid var(--primary);
+  color: var(--text-primary);
+}
+.prose-custom td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.prose-custom tr:hover td {
+  background: var(--card);
+}
+
+.prose-custom hr {
+  border: none;
+  height: 1px;
+  background: var(--border);
+  margin: 2rem 0;
+}
+
+.prose-custom img {
+  border-radius: 0.75rem;
+  margin: 1.5rem 0;
+  max-width: 100%;
+}

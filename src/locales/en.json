@@ -1,0 +1,131 @@
+{
+  "header": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "blog": "Blog"
+  },
+  "hero": {
+    "status": "SEEKING 2026 FULL-TIME OPPORTUNITIES",
+    "name": "Joe Bao",
+    "role": "Software Engineer / Open-Source Maintainer",
+    "tagline": "Focused on building high-performance automation tools, cloud-native architectures, and modern web experiences. Passionate about solving complex engineering challenges—from hardware-level discrepancies to frontend state management.",
+    "viewProjects": "VIEW PROJECTS",
+    "downloadCV": "DOWNLOAD CV",
+    "scroll": "SCROLL"
+  },
+  "about": {
+    "label": "About Me",
+    "title1": "Dedicated to",
+    "title2": "solving real-world engineering problems",
+    "p1": "I'm a Software Engineer currently pursuing a Master of IT at UNSW. I thrive on designing elegant solutions to complex problems—whether it's architecting declarative state machines, optimizing OpenCV image recognition, or reverse-engineering legacy codebases.",
+    "p2": "Beyond coding, I am a core maintainer of MaaEnd, an open-source project with tens of thousands of active users. I strongly believe in 'Convention over Configuration' and 'letting systems manage standards'. In my blog, I write about hard-won engineering lessons, from debugging performance spikes to solving color-space inconsistencies.",
+    "location": "Location",
+    "locationValue": "Sydney, Australia",
+    "experience": "Core Focus",
+    "experienceValue": "Open Source / Full-Stack",
+    "education": "Education",
+    "educationValue": "UNSW MIT / UQ BCS",
+    "terminalName": "Joe Bao",
+    "terminalRole": "Software Engineer",
+    "terminalPassion": "Writing reliable systems and clean code",
+    "terminalStatus": "Open to opportunities (Eligible for Subclass 485)"
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Frontend Development",
+    "frontendSub": "Vue.js, React Native, HTML/CSS",
+    "backend": "Backend Development",
+    "backendSub": "Django, REST API Design",
+    "database": "Database & Cloud",
+    "databaseSub": "AWS DynamoDB, SQL, NoSQL",
+    "devops": "DevOps & CI/CD",
+    "devopsSub": "GitHub Actions, Linux",
+    "languages": "Languages",
+    "languagesSub": "C++, Python, JavaScript, Go",
+    "web": "Computer Vision",
+    "webSub": "OpenCV, Image Processing",
+    "design": "Architecture Patterns",
+    "designSub": "Single-Table Design, Declarative State Machines",
+    "tools": "Developer Tools",
+    "toolsSub": "Git, VS Code, Vim"
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "title": "Core Maintainer & Developer",
+        "organization": "MaaEnd (Open-Source Automation Project)",
+        "period": "Jan 2026 - Present",
+        "description": "Maintain an open-source project with 130,000+ downloads and 1.7k+ stars, earning direct financial sponsorship from the project owner. Architected JSON & Go-based declarative state machine pipelines, combining OpenCV and OCR to significantly improve recognition robustness across varying GPU hardware."
+      },
+      {
+        "title": "Master of Information Technology",
+        "organization": "University of New South Wales (UNSW)",
+        "period": "Jun 2025 - Dec 2026 (Expected)",
+        "description": "Achieved High Distinction (HD) across core courses including Advanced C++ Programming (90), Computer Networks (89), and Database Systems (91)."
+      },
+      {
+        "title": "Front-End Engineer (Contract)",
+        "organization": "Huawei (Suzhou)",
+        "period": "Feb 2025 - Jun 2025",
+        "description": "Developed frontend modules (Vue.js) for enterprise-level router configuration products. Rapidly reverse-engineered and adapted to complex legacy architectures to diagnose and resolve high-priority rendering bugs, ensuring a zero-regression milestone release."
+      },
+      {
+        "title": "Bachelor of Computer Science",
+        "organization": "The University of Queensland (UQ)",
+        "period": "Feb 2022 - Nov 2024",
+        "description": "Core focus on Cloud Computing, High-Performance Computing, Compilers & Interpreters, AI, and Software Engineering Processes."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "title": "MaaEnd | Desktop Open-Source Automation Engine",
+        "description": "Flagship project. A computer vision and declarative state machine-based automation tool. Engineered a hybrid HSV color-matching and OCR fallback strategy to resolve RGB offset issues caused by varying GPU drivers, ensuring stability for thousands of users."
+      },
+      {
+        "title": "CI/CD Optimization Pipeline",
+        "description": "Custom performance optimization pipeline for MaaEnd. Reduced GitHub Actions template validation time from 10 hours to 5 minutes by implementing a hash-based incremental lossless compression algorithm (oxipng) and Cartesian product testing strategies."
+      },
+      {
+        "title": "Pantry Pal | Cloud-Native Smart Pantry",
+        "description": "Full-stack iOS application. Built the frontend with React Native and Context API. Architected the Django and AWS DynamoDB backend using Single-Table Design (PK/SK) and GSIs for optimized querying. Integrated AWS Textract for automated receipt OCR data entry."
+      }
+    ]
+  },
+  "contact": {
+    "label": "Get In Touch",
+    "title1": "Let's discuss",
+    "title2": "tech and collaborations",
+    "description": "I am actively seeking full-time software engineering roles starting late 2026 (currently available for part-time/internships at 48 hrs/fortnight). Whether you have a tough technical challenge to discuss or a matching opportunity, feel free to reach out!",
+    "cta": "SEND AN EMAIL",
+    "hint": "or find me on LinkedIn/GitHub in the navigation bar"
+  },
+  "footer": {
+    "marquee": "Joe Bao · Software Engineer",
+    "description": "Building reliable systems with clean code. Convention over Configuration.",
+    "navigation": "Navigation",
+    "connect": "Connect",
+    "copyright": "Joe Bao. All rights reserved.",
+    "builtWith": "Designed & built with React + Tailwind CSS"
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Post-mortems & Thoughts",
+    "subtitle": "Writing about open-source maintenance, debugging deep dives, performance optimization, and my engineering philosophy.",
+    "published": "{{count}} article published",
+    "published_other": "{{count}} articles published",
+    "minRead": "{{count}} min read",
+    "noPosts": "No posts yet. Ready to write down those stories about 400ms latency spikes and HSV color spaces?",
+    "backToAll": "Back to all articles",
+    "previous": "Previous",
+    "next": "Next",
+    "viewAll": "View all",
+    "viewAllArticles": "View all articles",
+    "latestArticles": "Latest Articles"
+  }
+}
