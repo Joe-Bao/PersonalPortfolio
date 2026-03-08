@@ -68,7 +68,7 @@ function buildPostEntries(): PostEntry[] {
     if (!lang || !raw) continue;
 
     const slug = parseSlugFromPath(path);
-    const { meta, content } = parseFrontmatter(raw as string);
+    const { meta, content } = parseFrontmatter(typeof raw === "string" ? raw : raw.default);
 
     const post: Post = {
       slug,

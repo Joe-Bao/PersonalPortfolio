@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Moon, Sun, Menu, X, Github, Linkedin, Mail, Twitter, Languages } from "lucide-react";
+import { Moon, Sun, Menu, X, Github, Linkedin, Mail, Languages } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
