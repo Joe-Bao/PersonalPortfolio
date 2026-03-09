@@ -33,28 +33,48 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="mb-8 inline-flex items-center gap-2 rounded-full border border-black/10 bg-black/5 px-4 py-2 font-mono text-xs tracking-wider dark:border-white/10 dark:bg-white/5"
+          className="mb-12 inline-flex items-center gap-2 rounded-full border border-black/10 bg-black/5 px-5 py-2.5 font-mono text-xs tracking-wider dark:border-white/10 dark:bg-white/5"
         >
           <span className="h-2 w-2 animate-pulse rounded-full bg-green-500" />
           <span className="text-[var(--text-tertiary)]">{t("hero.status")}</span>
         </motion.div>
 
-        <motion.h1
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
-          className="font-syne mb-6 text-5xl font-extrabold leading-[0.95] tracking-tight md:text-7xl lg:text-8xl"
+          className="mb-12 flex w-full items-center gap-6 md:gap-12 lg:gap-16"
         >
-          <span className="bg-gradient-to-r from-[var(--primary)] via-[var(--accent)] to-[var(--foreground)] bg-clip-text text-transparent">
-            {t("hero.name")}
-          </span>
-        </motion.h1>
+          <div
+            className="h-px flex-1 shrink-0"
+            style={{
+              background: "linear-gradient(to right, transparent, rgba(251, 191, 36, 0.6))",
+            }}
+          />
+          <h1 className="font-hero shrink-0 text-5xl font-normal tracking-wide md:text-7xl lg:text-8xl xl:text-9xl">
+            <span
+              className="bg-clip-text text-transparent"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, #facc15 0%, #fde047 50%, #e9d5ff 85%, #a855f7 100%)",
+              }}
+            >
+              {t("hero.name")}
+            </span>
+          </h1>
+          <div
+            className="h-px flex-1 shrink-0"
+            style={{
+              background: "linear-gradient(to left, transparent, rgba(168, 85, 247, 0.6))",
+            }}
+          />
+        </motion.div>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="font-mono mb-4 text-lg tracking-wider text-[var(--secondary)] md:text-2xl"
+          className="font-mono mb-6 text-lg tracking-wider text-[var(--secondary)] md:text-2xl"
         >
           {t("hero.role")}
         </motion.p>
@@ -63,7 +83,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="mx-auto mb-12 max-w-xl text-lg leading-relaxed font-light text-[var(--text-secondary)]"
+          className="mx-auto mb-16 max-w-xl text-lg leading-relaxed font-light text-[var(--text-secondary)]"
         >
           {t("hero.tagline")}
         </motion.p>
@@ -72,7 +92,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
-          className="flex flex-col items-center justify-center gap-4 sm:flex-row"
+          className="flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-8"
         >
           <a
             href="#projects"
